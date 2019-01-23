@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Murtadha Mohammed",
+  "author": "Ali Abdulkareem",
   "license": "ISC",
   "dependencies": {
     "commander": "^2.19.0",
     "firebase": "^5.7.2",
+    "grpc": "^1.18.0",
     "inquirer": "^6.2.1",
     "javascript-time-ago": "^2.0.1",
     "joi": "^14.3.1"

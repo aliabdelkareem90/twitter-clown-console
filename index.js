@@ -133,7 +133,7 @@ program
     .action(() => {
         UserConfig.checkLogin(uid => {
             if (uid) {
-                let tweetController = new TweetController
+                let tweetController = new TweetController()
                 tweetController.showOwnTweets(twt => {
                     let myTweets =[]
                     twt.forEach(doc => {

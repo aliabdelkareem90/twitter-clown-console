@@ -31,7 +31,7 @@ class TweetController {
         })
     }
 
-    showOwnTweets(callback) {
+    showOwnTweets(uid, callback) {
         this.tweet.getCurrentUserTweet(uid, (err, data) => {
             if (err) throw err
             else {
