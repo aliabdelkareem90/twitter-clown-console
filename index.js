@@ -134,7 +134,7 @@ program
         UserConfig.checkLogin(uid => {
             if (uid) {
                 let tweetController = new TweetController()
-                tweetController.showOwnTweets(twt => {
+                tweetController.showOwnTweets(uid, (twt) => {
                     let myTweets =[]
                     twt.forEach(doc => {
                         myTweets.push(doc.data().content + "\t (" + timeAgo.format(doc.data().date) + ") \n" + doc.id)
