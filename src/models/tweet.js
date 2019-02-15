@@ -22,7 +22,7 @@ class Tweet {
     }
 
     getCurrentUserTweet(uid, callback) {
-        firebase.firestore().collection('tweets').where({uid: uid}).get()
+        firebase.firestore().collection('tweets').where(uid, "==", uid).get()
             .then((data) => {
                 callback(undefined, data)
             })
